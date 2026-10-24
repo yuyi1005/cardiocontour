@@ -4,7 +4,7 @@
     Yi Yu<sup>1*</sup>, Zhenyu Bu<sup>1*</sup>, Ziyu Zhang<sup>2</sup>, Yixuan Liu<sup>1</sup>, Aotian Chen<sup>1</sup>, James Mihalich<sup>1</sup>, Parker Martin<sup>1</sup>, Xia Ning<sup>1</sup>, Yuchi Han<sup>1</sup>, Yuan Xue<sup>1†</sup>
   </p>
   <p align="center">
-    <sup>1</sup>The Ohio State University &nbsp;&nbsp; <sup>2</sup>Nanjing University &nbsp;&nbsp; * Equal contribution &nbsp;&nbsp; † Corresponding author
+    <sup>1</sup>The Ohio State University &nbsp;&nbsp; <sup>2</sup>Nanjing University &nbsp;&nbsp; <sup>*</sup>Equal contribution &nbsp;&nbsp; <sup>†</sup>Corresponding author
   </p>
   <div align="center">
       <!-- <a href='https://arxiv.org/abs/2608.00145'><img src='https://img.shields.io/badge/arXiv-2608.00145-brown.svg?logo=arxiv&logoColor=white'></a> -->
