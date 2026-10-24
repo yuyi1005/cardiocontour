@@ -7,28 +7,16 @@ Yi Yu<sup>1*</sup>, Zhenyu Bu<sup>1*</sup>, Ziyu Zhang<sup>2</sup>, Yixuan Liu<s
 \* Equal contribution. † Corresponding author: xue.643@osu.edu
 
 <p align="center">
-  <img src="resources/architecture.png" alt="Overview of the Fourier contour learning framework" width="90%">
-</p>
-
-<p align="center">
-  <img src="resources/video-4d-cine-recontruction.gif" alt="4D cine reconstruction from predicted Fourier contours" width="70%">
+  <img src="resources/video-4d-cine-recontruction.gif" alt="4D cine reconstruction from predicted Fourier contours" width="50%">
 </p>
 
 ## Abstract
 
 Automated cardiac MRI quantification is commonly framed either as dense segmentation followed by voxel counting or as direct regression of global measurements. The two paradigms are difficult to unify: segmentation is visually interpretable but label-intensive and output-heavy, while regression is compact but less verifiable. We propose Fourier Contour Learning, which represents cardiac boundaries with compact anatomical Fourier contours. The predicted coefficients define smooth, interpretable contours and enable differentiable volume computation, connecting mask supervision, measurement supervision, and unlabeled-image regularization within one framework. We instantiate this representation with an anatomy-query decoder and cross-slice attention which creates a traceable path from image to contour to clinical measurement. Across three public datasets and an in-house all-phase cohort, our method achieves segmentation accuracy comparable to strong dense-prediction baselines, improves boundary agreement, and reduces clinically relevant volume error while using only a small number of output parameters per structure. We further show that the learned model provides an efficient interface for vision-language question answering and surface reconstruction. These results demonstrate the potential of Fourier contours as a unified intermediate representation for scalable, traceable, and clinically grounded cardiac analysis.
 
-## Resources
-
-| Resource | Location |
-|---|---|
-| Pretrained checkpoint (Fourier order M = 6) | <https://huggingface.co/yuyi1005/cardiocontour> (see [Checkpoint](#checkpoint)) |
-| Example case for inference | `data/ACDC/database/testing/patient101` |
-| Data layout and dataset splits | [data/README.md](data/README.md) |
-| ACDC | <https://www.creatis.insa-lyon.fr/Challenge/acdc/> |
-| M&Ms | <https://www.ub.edu/mnms/> |
-| M&Ms-2 | <https://www.ub.edu/mnms-2/> |
-| Paper | <!-- TODO: add link --> |
+<p align="center">
+  <img src="resources/architecture.png" alt="Overview of the Fourier contour learning framework" width="90%">
+</p>
 
 ## Installation
 
@@ -47,6 +35,12 @@ The pretrained weights are hosted on Hugging Face: <https://huggingface.co/yuyi1
 ## Data
 
 Download ACDC, M&Ms and M&Ms-2 from the links above and place them under `data/` as described in [data/README.md](data/README.md). Run all scripts from the repository root. Inference only needs the example case that ships in `data/`.
+
+| Resource | Location |
+|---|---|
+| ACDC | <https://www.creatis.insa-lyon.fr/Challenge/acdc/> |
+| M&Ms | <https://www.ub.edu/mnms/> |
+| M&Ms-2 | <https://www.ub.edu/mnms-2/> |
 
 ## Inference
 
@@ -69,6 +63,10 @@ python infer_video.py
 - Use `--nifti_path` (or `--cine_path` for `infer_video.py`) and `--gt-path` to run on your own short-axis NIfTI file. The input should be a short-axis stack; 4D files are handled frame by frame.
 - Use `--checkpoint` to load a different checkpoint, and `--fourier_m` to match its Fourier order.
 - `infer_vis3d.py` opens an interactive VTK window unless `--screenshot-path` is given. On a machine without a display, run `infer_vis3d.py` and `infer_video.py` with `xvfb-run -a`.
+
+<p align="center">
+  <img src="resources/video-4d-cine-recontruction.gif" alt="4D cine reconstruction from predicted Fourier contours" width="50%">
+</p>
 
 ## Evaluation
 
