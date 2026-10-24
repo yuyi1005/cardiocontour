@@ -1,0 +1,32 @@
+Dataset: acdc
+Test loss_total=0.284795 | loss_cls=0.000057 | loss_coef=0.097665 | loss_cont=0.114322 | loss_meas=0.046719 | loss_edge=0.026032 | loss_positive_curve_iou=0.931213 | loss_positive_curve_iou_count=57.000000 | loss_mask_gt_count=2.000000 | pos_curve_iou=0.931213
+
+acdc_patient101_frame01 GT volume (mL) | LV=222.60, MYO=127.58, RV=129.79
+acdc_patient101_frame01 pred Fourier volume (mL) | LV=226.90, MYO=136.88, RV=122.56
+acdc_patient101_frame01 pred mask volume (mL) | LV=225.24, MYO=135.50, RV=125.11
+acdc_patient101_frame01 Fourier-vs-GT volume diff | LV absdiff=4.30, MYO absdiff=9.30, RV absdiff=7.23
+acdc_patient101_frame01 Mask-vs-GT volume diff | LV absdiff=2.64, MYO absdiff=7.91, RV absdiff=4.68
+acdc_patient101_frame01 Dice | LV=0.9726, MYO=0.8746, RV=0.9197, Mean=0.9223 | PosCurveIoU=0.9399 over 30 curves
+acdc_patient101_frame01 Surface | LV HD95=1.6406mm NSD=0.9940, MYO HD95=1.6406mm NSD=0.9844, RV HD95=1.6406mm NSD=0.9556, Mean HD95=1.6406mm NSD=0.9780
+acdc_patient101_frame14 GT volume (mL) | LV=156.01, MYO=128.79, RV=70.06
+acdc_patient101_frame14 pred Fourier volume (mL) | LV=149.37, MYO=143.96, RV=63.24
+acdc_patient101_frame14 pred mask volume (mL) | LV=147.93, MYO=143.11, RV=66.75
+acdc_patient101_frame14 Fourier-vs-GT volume diff | LV absdiff=6.63, MYO absdiff=15.17, RV absdiff=6.82
+acdc_patient101_frame14 Mask-vs-GT volume diff | LV absdiff=8.07, MYO absdiff=14.32, RV absdiff=3.31
+acdc_patient101_frame14 Dice | LV=0.9594, MYO=0.8848, RV=0.8585, Mean=0.9009 | PosCurveIoU=0.9215 over 27 curves
+acdc_patient101_frame14 Surface | LV HD95=1.6406mm NSD=0.9842, MYO HD95=1.6406mm NSD=0.9737, RV HD95=3.6685mm NSD=0.8855, Mean HD95=2.3166mm NSD=0.9478
+
+Average Fourier-vs-GT volume absolute difference (mL)
+LV=5.47±1.17, MYO=12.23±2.93, RV=7.03±0.21
+
+Average Mask-vs-GT volume absolute difference (mL)
+LV=5.36±2.72, MYO=11.12±3.20, RV=4.00±0.69
+
+Average Dice over patients
+LV=0.9660, MYO=0.8797, RV=0.8891, Mean=0.9116
+
+Average surface metrics over patients
+LV HD95=1.6406mm NSD=0.9891, MYO HD95=1.6406mm NSD=0.9790, RV HD95=2.6546mm NSD=0.9206, Mean HD95=1.9786mm NSD=0.9629
+
+Average IoU over all GT-positive curves
+IoU=0.9312 over 57 curves

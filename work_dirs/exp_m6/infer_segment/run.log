@@ -1,0 +1,68 @@
+/users/PCON0521/yuyi1005/.conda/envs/GHDHeart/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/users/PCON0521/yuyi1005/.conda/envs/GHDHeart/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loaded checkpoint from checkpoints/cardiocontour_v1_pretrained_m6_last.pt
+Unexpected keys: ['detr.class_embed.weight', 'detr.class_embed.bias', 'detr.bbox_embed.layers.0.weight', 'detr.bbox_embed.layers.0.bias', 'detr.bbox_embed.layers.1.weight', 'detr.bbox_embed.layers.1.bias', 'detr.bbox_embed.layers.2.weight', 'detr.bbox_embed.layers.2.bias']
+Running segmentation on 30 frame(s)
+Inferred frame 1/30
+Inferred frame 2/30
+Inferred frame 3/30
+Inferred frame 4/30
+Inferred frame 5/30
+Inferred frame 6/30
+Inferred frame 7/30
+Inferred frame 8/30
+Inferred frame 9/30
+Inferred frame 10/30
+Inferred frame 11/30
+Inferred frame 12/30
+Inferred frame 13/30
+Inferred frame 14/30
+Inferred frame 15/30
+Inferred frame 16/30
+Inferred frame 17/30
+Inferred frame 18/30
+Inferred frame 19/30
+Inferred frame 20/30
+Inferred frame 21/30
+Inferred frame 22/30
+Inferred frame 23/30
+Inferred frame 24/30
+Inferred frame 25/30
+Inferred frame 26/30
+Inferred frame 27/30
+Inferred frame 28/30
+Inferred frame 29/30
+Inferred frame 30/30
+Rasterized frame 1/30
+Rasterized frame 2/30
+Rasterized frame 3/30
+Rasterized frame 4/30
+Rasterized frame 5/30
+Rasterized frame 6/30
+Rasterized frame 7/30
+Rasterized frame 8/30
+Rasterized frame 9/30
+Rasterized frame 10/30
+Rasterized frame 11/30
+Rasterized frame 12/30
+Rasterized frame 13/30
+Rasterized frame 14/30
+Rasterized frame 15/30
+Rasterized frame 16/30
+Rasterized frame 17/30
+Rasterized frame 18/30
+Rasterized frame 19/30
+Rasterized frame 20/30
+Rasterized frame 21/30
+Rasterized frame 22/30
+Rasterized frame 23/30
+Rasterized frame 24/30
+Rasterized frame 25/30
+Rasterized frame 26/30
+Rasterized frame 27/30
+Rasterized frame 28/30
+Rasterized frame 29/30
+Rasterized frame 30/30
+Saved predicted mask: work_dirs/exp_m6/infer_segment/patient101_4d_pred_mask.nii.gz | shape=(256, 256, 10, 30) | LV=190044 MYO=152387 RV=83360
