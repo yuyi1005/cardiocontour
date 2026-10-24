@@ -1,10 +1,18 @@
-# Fourier Contour Learning for Efficient and Traceable Cardiac MRI Quantification
-
-Yi Yu<sup>1*</sup>, Zhenyu Bu<sup>1*</sup>, Ziyu Zhang<sup>2</sup>, Yixuan Liu<sup>1</sup>, Aotian Chen<sup>1</sup>, James Mihalich<sup>1</sup>, Parker Martin<sup>1</sup>, Xia Ning<sup>1</sup>, Yuchi Han<sup>1</sup>, Yuan Xue<sup>1†</sup>
-
-<sup>1</sup>The Ohio State University &nbsp;&nbsp; <sup>2</sup>Nanjing University
-
-\* Equal contribution. † Corresponding author: xue.643@osu.edu
+<p align="center">
+  <h1 align="center">Fourier Contour Learning for Efficient and Traceable Cardiac MRI Quantification</h1>
+  <p align="center">
+    Yi Yu<sup>1*</sup>, Zhenyu Bu<sup>1*</sup>, Ziyu Zhang<sup>2</sup>, Yixuan Liu<sup>1</sup>, Aotian Chen<sup>1</sup>, James Mihalich<sup>1</sup>, Parker Martin<sup>1</sup>, Xia Ning<sup>1</sup>, Yuchi Han<sup>1</sup>, Yuan Xue<sup>1†</sup>
+  </p>
+  <p align="center">
+    <sup>1</sup>The Ohio State University &nbsp;&nbsp; <sup>2</sup>Nanjing University &nbsp;&nbsp; * Equal contribution. † Corresponding author: xue.643@osu.edu
+  </p>
+  <div align="center">
+      <!-- <a href='https://arxiv.org/abs/2608.00145'><img src='https://img.shields.io/badge/arXiv-2608.00145-brown.svg?logo=arxiv&logoColor=white'></a> -->
+  </div>
+  <p align="center">
+    If you find our work helpful, please consider giving us a ⭐.
+  </p>
+</p>
 
 <p align="center">
   <img src="resources/video-4d-cine-recontruction.gif" alt="4D cine reconstruction from predicted Fourier contours" width="50%">
