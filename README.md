@@ -72,10 +72,6 @@ python infer_video.py
 - Use `--checkpoint` to load a different checkpoint, and `--fourier_m` to match its Fourier order.
 - `infer_vis3d.py` opens an interactive VTK window unless `--screenshot-path` is given. On a machine without a display, run `infer_vis3d.py` and `infer_video.py` with `xvfb-run -a`.
 
-<p align="center">
-  <img src="resources/video-4d-cine-recontruction.gif" alt="4D cine reconstruction from predicted Fourier contours" width="50%">
-</p>
-
 ## Evaluation
 
 ```bash
